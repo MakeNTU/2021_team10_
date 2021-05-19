@@ -110,27 +110,24 @@ for day in li:
         i = i +1
         
 weather = [final[1][1],final[1][2],final[1][3]]
-d = datetime.now().strftime('%H %M %S')
-# print(d)
-
-
-with open('weather.csv', 'w',newline='') as f:
+d = datetime.now().strftime('今天是%Y年%m月%d日 現在時間是%H點%M分%S秒')
+with open('weather.csv', 'w',newline='',encoding="utf-8") as f:
     f.write(d+"今天天氣"+final[1][1]+"最高溫是"+final[1][2]+'度 最低溫是'+final[1][3]+'度')
 
-with open('weather.csv', 'w', errors='ignore', newline='') as f:
-            f_csv = csv.writer(f)
-            f_csv.writerows(weather)
+# with open('weather.csv', 'w', errors='ignore', newline='') as f:
+#             f_csv = csv.writer(f)
+#             f_csv.writerows(weather)
 
-print(weather)
+# print(weather)
 
 
 from gtts import gTTS
 import os
 
-# with open("weather.csv") as g:
-#    myText = g.read()
-#    print(myText)
-#    bt.write(myText)
+with open("weather.csv",encoding="utf-8") as g:
+    myText = g.read()
+    print(myText)
+    # bt.write(myText)
 
 language = 'zh'
 output = gTTS(text=myText, lang=language, slow=False)
