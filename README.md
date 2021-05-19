@@ -7,15 +7,5 @@
 臺灣大學 電機一 謝承修 b09901066 <br>
 臺灣大學 電機一 巫竑儒 b09901072 <br>
 
-## 作品介紹
-作品名稱：奔跑鬧鐘 <br>
-作品用途： <br>
-DEMO影片連結：
-
-### 運作方式
-
-### 如何實作
-
-### Dependencies / Requirements (用到哪些軟體、開發板、模組、工具...)
-
-## 工作分配
+## 作品詳細介紹
+請見HACKMD:https://hackmd.io/S76BtG9HTBqbB-6rbIvcog?both
